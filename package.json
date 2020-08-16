@@ -1,0 +1,27 @@
+{
+  "name": "verlet-simulation-p5js",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Verlet simulation written in TypeScript using p5js.",
+  "author": "BlackSpotBear",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p . && webpack",
+    "watch": "run-p watch:ts watch:webpack",
+    "watch:ts": "tsc -p . --watch",
+    "watch:webpack": "webpack --watch",
+    "start": "livereloadx --static --port 3300 public/"
+  },
+  "devDependencies": {
+    "@types/p5": "^0.9.0",
+    "livereloadx": "^0.3.10",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^3.8.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "p5": "^1.1.9"
+  }
+}
